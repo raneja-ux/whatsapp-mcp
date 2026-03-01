@@ -246,6 +246,8 @@ def download_media(message_id: str, chat_jid: str) -> Dict[str, Any]:
             "message": "Failed to download media"
         }
 
-if __name__ == "__main__":
-    # Initialize and run the server
+def main():
     mcp.run(transport='stdio')
+
+if __name__ == "__main__":
+    main()
